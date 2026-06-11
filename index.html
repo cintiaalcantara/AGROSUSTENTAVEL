@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 | Futuro Sustentável</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        agro: {
+                            verde: '#1E4620',
+                            esmeralda: '#2E7D32',
+                            neon: '#A3E635',
+                            terra: '#8B5A2B',
+                            fundo: '#F8FAFC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-agro-fundo text-slate-800 font-sans antialiased">
+
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-6xl bg-white/80 backdrop-blur-md border border-slate-200/50 rounded-2xl shadow-lg z-50 px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-black text-agro-verde tracking-tight">AGRO<span class="text-agro-esmeralda">SUSTENTÁVEL</span></div>
+        <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+            <a href="#inicio" class="hover:text-agro-esmeralda transition">Início</a>
+            <a href="#tecnologia" class="hover:text-agro-esmeralda transition">Inovação</a>
+            <a href="#dados" class="hover:text-agro-esmeralda transition">Métricas</a>
+            <a href="#simulador" class="hover:text-agro-esmeralda transition">Simulador</a>
+        </div>
+        <a href="#simulador" class="bg-agro-esmeralda hover:bg-agro-verde text-white px-4 py-2 rounded-xl text-sm font-bold shadow-md transition">Testar Simulador</a>
+    </nav>
+
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center bg-slate-950 pt-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1625246333195-78d9c38ad451?auto=format&fit=crop&q=80&w=1920')] bg-cover bg-center mix-blend-overlay"></div>
+        
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-agro-neon/20 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-5xl text-center px-6 z-10 space-y-6">
+           
+            <h1 class="text-5xl md:text-7xl font-black text-white leading-tight tracking-tight">
+                Produzir com Força,<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-agro-neon to-emerald-400">Preservar com Inteligência</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto font-normal">
+                O equilíbrio real entre o campo forte e o meio ambiente protegido através da tecnologia de precisão, inteligência artificial e manejo regenerativo.
+            </p>
+            <div class="flex justify-center gap-4 pt-4">
+                <a href="#tecnologia" class="bg-agro-neon hover:bg-lime-500 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-xl hover:shadow-agro-neon/20 transition transform hover:-translate-y-0.5">Explorar Tecnologias</a>
+                <a href="#dados" class="bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl border border-white/20 backdrop-blur-sm transition">Ver Dados Reais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologia" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <h2 class="text-4xl font-extrabold text-agro-verde tracking-tight">Pilares da Revolução Verde</h2>
+            <p class="text-slate-500">Ferramentas que transformam propriedades comuns em ecossistemas inteligentes e de alta produtividade.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
+                <div class="w-12 h-12 rounded-2xl bg-lime-100 text-agro-esmeralda flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition">🛰️</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Sensores e IoT</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Sondas no solo medem a umidade e nutrientes em tempo real, enviando dados para o smartphone do produtor, evitando desperdício de água e fertilizantes.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-agro-esmeralda flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition">🚁</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Mapeamento por Drones</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Drones com câmeras multiespectrais identificam infestações antes que se espalhem, reduzindo em até 60% a aplicação de defensivos químicos.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl transition group">
+                <div class="w-12 h-12 rounded-2xl bg-amber-100 text-agro-terra flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition">🌱</div>
+                <h3 class="text-xl font-bold mb-3 text-slate-900">Manejo Regenerativo</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Sistemas ILPF (Integração Lavoura-Pecuária-Floresta) recuperam pastagens degradadas, fixam carbono no solo e criam um microclima saudável.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dados" class="bg-white py-24 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-agro-esmeralda font-bold text-sm tracking-wider uppercase">Evidências Práticas</span>
+                <h2 class="text-4xl font-extrabold text-slate-900 tracking-tight">O Gráfico do Equilíbrio Perfeito</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Observe o milagre da tecnologia no campo: nas últimas décadas, o uso de inteligência agronômica permitiu que a **produtividade disparasse**, enquanto a **área de terra utilizada permaneceu praticamente estável**. Isso prova que poupamos florestas produzindo mais no mesmo espaço.
+                </p>
+                
+            </div>
+            <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 shadow-sm">
+                <canvas id="graficoAgro" class="w-full"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="py-24 max-w-4xl mx-auto px-6">
+        <div class="bg-gradient-to-br from-agro-verde to-emerald-900 rounded-[2.5rem] text-white p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-12 -bottom-12 w-64 h-64 bg-agro-neon/10 rounded-full blur-2xl"></div>
+            
+            <div class="relative z-10 space-y-6 text-center md:text-left">
+                <h2 class="text-3xl font-black tracking-tight">Simulador de Decisão Agrinho</h2>
+                <p class="text-emerald-100 max-w-xl">Aja como um gestor de fazenda moderno. Qual decisão você tomaria para aumentar o lucro protegendo as nascentes de água?</p>
+                
+                <div class="space-y-3 pt-4 text-left">
+                    <button onclick="tomarDecisao(1)" class="w-full bg-white/10 hover:bg-white/20 border border-white/10 p-5 rounded-2xl text-left font-medium transition flex justify-between items-center group">
+                        <span>A) Desviar um pequeno trecho do rio para irrigar áreas mais secas rapidamente.</span>
+                        <span class="text-agro-neon opacity-0 group-hover:opacity-100 transition">➔</span>
+                    </button>
+                    <button onclick="tomarDecisao(2)" class="w-full bg-white/10 hover:bg-white/20 border border-white/10 p-5 rounded-2xl text-left font-medium transition flex justify-between items-center group">
+                        <span>B) Cercar as Áreas de Preservação (APP) e instalar gotejamento computadorizado via sensores.</span>
+                        <span class="text-agro-neon opacity-0 group-hover:opacity-100 transition">➔</span>
+                    </button>
+                    <button onclick="tomarDecisao(3)" class="w-full bg-white/10 hover:bg-white/20 border border-white/10 p-5 rounded-2xl text-left font-medium transition flex justify-between items-center group">
+                        <span>C) Não mexer em nada e torcer para que o clima compense a falta de água nas plantas.</span>
+                        <span class="text-agro-neon opacity-0 group-hover:opacity-100 transition">➔</span>
+                    </button>
+                </div>
+
+                <div id="feedback-simulador" class="hidden p-6 rounded-2xl bg-white text-slate-800 transition duration-500 shadow-lg font-medium"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm border-t border-slate-800">
+        <p class="font-semibold text-white mb-2">Cintia Alcantara 2026</p>
+        <p>Desenvolvido com tecnologias web avançadas (HTML5, Tailwind CSS, Chart.js)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
